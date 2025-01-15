@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="29.49" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="User Add PIM Data" name="User Successfully add PIM - #1.1" time="29.382">
+<system-out><![CDATA[
+Given User already on PIM page..............................................passed
+When User click add pim button..............................................passed
+And User insert profile "profile.png".......................................passed
+And User input employee fullname "Archie", "Grey", "Buster".................passed
+And User input employee id "099080".........................................passed
+And User enabled login details..............................................passed
+And User input username "archiebuster"......................................passed
+And User change status to "Disabled"........................................passed
+And User input password "ArcBust123"........................................passed
+And User input confirm password "ArcBust123"................................passed
+And User click save button..................................................passed
+Then User click PIM page....................................................passed
+And User search employee name "Archie", "Grey", "Buster"....................passed
+And User click search button................................................passed
+Then User should see the data exist.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
