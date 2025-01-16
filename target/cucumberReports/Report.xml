@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="29.49" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="User Add PIM Data" name="User Successfully add PIM - #1.1" time="29.382">
+<testsuite name="Cucumber" time="90.537" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="User Login to Admin Page" name="User successfully login to Admin Page - #1.1" time="12.773">
+<system-out><![CDATA[
+Given User is on login page.................................................passed
+When User enters username "Admin" and password "admin123"...................passed
+And User clicks on Login button.............................................passed
+Then User should be logged in to Admin Page.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login to Admin Page" name="User failed login to Admin Page with wrong username - #1.1" time="8.949">
+<system-out><![CDATA[
+Given User is on login page.................................................passed
+When User enters username "admin332" and password "admin123"................passed
+And User clicks on Login button.............................................passed
+Then User should see alert error "Invalid credentials"......................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login to Admin Page" name="User failed login to Admin Page with wrong password - #1.1" time="18.116">
+<system-out><![CDATA[
+Given User is on login page.................................................passed
+When User enters username "admin332" and password "admin123"................passed
+And User clicks on Login button.............................................passed
+Then User should see alert error "Invalid credentials"......................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login to Admin Page" name="User failed login to Admin Page with wrong username and password - #1.1" time="12.391">
+<system-out><![CDATA[
+Given User is on login page.................................................passed
+When User enters username "Adminwe" and password "admin321".................passed
+And User clicks on Login button.............................................passed
+Then User should see alert error "Invalid credentials"......................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login to Admin Page" name="User failed login to Admin Page with empty data - #1.1" time="11.703">
+<system-out><![CDATA[
+Given User is on login page.................................................passed
+When User enters username "" and password ""................................passed
+And User clicks on Login button.............................................passed
+Then User should see login error............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Add PIM Data" name="User Successfully add PIM - #1.1" time="26.466">
 <system-out><![CDATA[
 Given User already on PIM page..............................................passed
 When User click add pim button..............................................passed

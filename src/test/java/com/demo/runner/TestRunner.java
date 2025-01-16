@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = {
-//                "src/test/resources/features/login/loginAdmin.feature",
+                "src/test/resources/features/login/loginAdmin.feature",
                 "src/test/resources/features/pim/pimAdd.feature"
         },
         glue = {
